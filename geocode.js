@@ -39,7 +39,7 @@ function areaToCoordinates() {
         sheet.getRange(areaRow, longColumn).setValue(long);
         sheet.getRange(areaRow, latColumn).setValue(lat);
       } else if (location.status == 'ZERO_RESULTS') { 
-        ;
+        continue;
       }
   }
 };
